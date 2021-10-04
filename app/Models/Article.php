@@ -10,15 +10,21 @@ class Article extends Model
 {
     use HasFactory;
 
-        public function scopeSearch(Builder $query, $params)
+    public function scopeSearch(Builder $query, $params)
     {
         if (!empty($params['name'])) {
             $query->where('name', 'like', '%' . $params['name'] . '%');
         }
-        if (!empty($params['category'])) {
-            $query->where('birthplace', 'like', '%' . $params['birthplace'] . '%');
+        if (!empty($params['birthplace'])) {
+            $query->whereHas('Birthplace', function ($q) use ($params) {
+                $q->where('name', 'like', '%' . $params['birthplace'] . '%');
+            });
         }
         return $query;
     }
-}
 
+    public function birthplace()
+    {
+        return $this->belongsTo(\App\Models\Birthplace::class);
+    }
+}

@@ -22,8 +22,8 @@
                 <td>{{ $article->age }}</td>
             </tr>
             <tr>
-                <th>出身地ID</th>
-                <td>{{ $article->birthplace_id }}</td>
+                <th>出身地</th>
+                <td>{{ $article->birthplace->name }}</td>
             </tr>
             <tr>
                 <th>性別</th>
