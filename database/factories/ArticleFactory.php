@@ -31,7 +31,7 @@ class ArticleFactory extends Factory
             'birthplace_id' =>rand(1, 47),
             'sex' =>$sex[array_rand($sex)],
             'comment' => $this->faker->realText(50),
-            'image' =>'storage/article_image/' . rand(1, 17) . '.jpg',
+            'image' =>'article_image/' . rand(1, 17) . '.jpg',
         ];
     }
 }
