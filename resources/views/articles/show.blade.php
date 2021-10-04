@@ -33,11 +33,6 @@
                 <th>コメント</th>
                 <td>{{ $article->comment }}</td>
             </tr>
-            <tr>
-                <th>写真</th>
-                <td>{{ $article->image }}</td>
-            </tr>
-
         </tbody>
     </table>
     <a href="{{ route('articles.index') }}">戻る</a>

@@ -1,7 +1,9 @@
 <div class="pos-f-t">
     <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
-            <a href="{{ route('articles.index') }}"><h5 class="text-white h4 logo">人間登録アプリ</h5></a>
+            <a href="{{ route('articles.index') }}">
+                <h5 class="text-white h4 logo">人間登録アプリ</h5>
+            </a>
             <span class="text-muted logo">Home</span>
         </div>
     </div>

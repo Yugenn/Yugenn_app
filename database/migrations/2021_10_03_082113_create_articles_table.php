@@ -21,7 +21,7 @@ class CreateArticlesTable extends Migration
             $table->unsignedInteger('birthplace_id');
             $table->foreign('birthplace_id')              // birthplace_idに外部キーを設定する
                 ->references('id')->on('birthplaces')    // birthplacesテーブルのidカラムを外部キーにする
-                ->onDelete('restrict');          
+                ->onDelete('restrict');
             $table->string('sex');
             $table->string('comment');
             $table->text('image');
