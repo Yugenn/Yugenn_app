@@ -11,10 +11,10 @@
             <span class="navbar-toggler-icon" href="{{ route('articles.index') }}"></span>
         </button>
 
-        <form class="form-inline my-2 my-lg-0">
+        <form class="form-inline my-2 my-lg-0" mechod="GET" action="{{ route('articles.index') }}">
 
-            <input class="form-control mr-sm-2 logo" type="search" placeholder="出身地">
-            <input class="form-control mr-sm-2 logo" type="search" placeholder="人物名">
+            <input class="form-control mr-sm-2" type="search" name="birthplace" placeholder="出身地">
+            <input class="form-control mr-sm-2" type="search" name="name" placeholder="名前">
             <button class="btn btn-outline-success my-2 my-sm-0 logo" type="submit">Search</button>
         </form>
     </nav>

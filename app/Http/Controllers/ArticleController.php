@@ -7,9 +7,13 @@ use App\Models\Article;
 
 class ArticleController extends Controller
 {
-        public function index()
+    public function index(Request $request)
     {
-        $articles = Article::all();
+        $name = $request->name;
+        $birthplace = $request->birthplace;
+        $params = $request->query();
+        $articles = Article::search($params)->paginate(10);
+        $articles->appends(compact('name', 'birthplace'));
         return view('articles.index', compact('articles'));
     }
 
