@@ -4,6 +4,7 @@
 
 @section('content')
 
+<a href="{{ route('articles.create') }}"><button type="button">新規登録</button></a>
     <ul>
         @foreach ($articles as $article)
             <li class="list-unstyled border mb-5 pl-3 shadow">

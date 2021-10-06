@@ -16,5 +16,4 @@ use App\Http\Controllers\ArticleController;
 
 Route::get('/', [ArticleController::class, 'index'])
     ->name('root');
-Route::resource('articles', ArticleController::class)
-    ->only(['index', 'show']);
+Route::resource('articles', ArticleController::class);
