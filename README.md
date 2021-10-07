@@ -23,24 +23,15 @@
 - 誰でも編集できてしまう(ユーザー、管理者の実装)
 
 ## 画面
-### サプリメント一覧画面
-<img width="1440" alt="スクリーンショット 2021-10-06 22 35 28" src=https://raw.githubusercontent.com/Yugenn/Yugenn_app/images/一覧.png>
-<img width="1440" alt="スクリーンショット 2021-10-06 22 38 35" src="https://user-images.githubusercontent.com/81233714/136215153-6ca357a1-e016-4ac9-a176-18fa0bd4731f.png">
+### 一覧画面
+<img width="1280" alt="一覧" src="https://user-images.githubusercontent.com/89439437/136316760-874a6ccf-53bb-4c9d-9056-4727d7dd9e80.png">
 
-### サプリメント詳細画面
-<img width="1440" alt="スクリーンショット 2021-10-06 22 39 04" src="https://user-images.githubusercontent.com/81233714/136215321-a7016b4c-cea7-4346-8c66-f8c5b746c1d9.png">
+### 詳細画面
+<img width="1280" alt="詳細" src="https://user-images.githubusercontent.com/89439437/136316860-1d50e7e1-ee3e-474b-b41d-b3729feba5a6.png">
 
-### レビュー一覧画面
-<img width="1440" alt="スクリーンショット 2021-10-06 22 39 25" src="https://user-images.githubusercontent.com/81233714/136215741-ef36c5a8-4823-4688-8ac4-a1582924b818.png">
 
-### サプリメント登録画面
-<img width="1440" alt="スクリーンショット 2021-10-06 22 39 43" src="https://user-images.githubusercontent.com/81233714/136216372-266cc093-398b-4ea1-bf61-0107a0a2ac7d.png">
+### 新規登録画面
+<img width="1280" alt="新規登録" src="https://user-images.githubusercontent.com/89439437/136316912-79fa3ef2-59ee-4369-b92e-f9433a33d4fd.png">
 
-### サプリメント編集画面
-<img width="1440" alt="スクリーンショット 2021-10-06 22 39 59" src="https://user-images.githubusercontent.com/81233714/136216505-745ca6eb-b8b5-4bd8-83b4-cf46dbc45a9d.png">
-
-### レビュー登録画面
-<img width="1440" alt="スクリーンショット 2021-10-06 22 40 30" src="https://user-images.githubusercontent.com/81233714/136216696-4c150a25-5050-4dae-baff-bdead6c030f3.png">
-
-### レビュー編集画面
-<img width="1440" alt="スクリーンショット 2021-10-06 22 40 16" src="https://user-images.githubusercontent.com/81233714/136216840-7fa81add-444e-457f-9c92-82df29552250.png">
+### 編集画面
+<img width="1280" alt="更新" src="https://user-images.githubusercontent.com/89439437/136316960-d7aa95f8-f91f-4269-8fe8-dd18223fa448.png">
