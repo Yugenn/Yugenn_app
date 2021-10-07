@@ -35,11 +35,12 @@ class ArticleController extends Controller
         $article = new Article;
 
         $article->name = $request->name;
-        $article->birthplace_id = $request->birthplace;
-        // $article->price = $request->price;
-        // $article->volume = $request->volume;
-        // $article->description = $request->description;
-        // $article->img_path = 'storage/article_image/4.jpg';
+        $article->birthday = $request->birthday;
+        $article->age = $request->age;
+        $article->birthplace_id = $request->birthplace_id;
+        $article->sex = $request->sex;
+        $article->comment = $request->comment;
+        $article->image = $request->image;
 
         $article->save();
 
@@ -55,11 +56,12 @@ class ArticleController extends Controller
     public function update(Request $request, Article $article)
     {
         $article->name = $request->name;
+        $article->birthday = $request->birthday;
+        $article->age = $request->age;
         $article->birthplace_id = $request->birthplace_id;
-        // $article->price = $request->price;
-        // $article->volume = $request->volume;
-        // $article->description = $request->description;
-        // $article->img_path = $request->img_path;
+        $article->sex = $request->sex;
+        $article->comment = $request->comment;
+        $article->image = $request->image;
 
         $article->save();
 

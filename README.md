@@ -1,64 +1,46 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# 人間登録アプリ
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## アプリの概要
+- 出会った人を登録できるアプリ
+- 登録した人を閲覧、編集、更新することができます。
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## テーブル定義
+- Articleテーブル  人物の情報が格納されています。
+- Birthplaceテーブル 都道府県の情報が格納されています。
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 実装機能
+- サプリメント情報のCRUD機能
+- 個々のサプリメントに対するレビユーのCRUD機能
+- サプリメントの検索機能
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 苦労したところ
+- レビューのCRUD機能を実装するのが大変でした。主に、レビューとサプリメントの紐付けが難しかった。
 
-## Learning Laravel
+## 改良点
+- バリデーションがまだ実装できていない。
+- 新規登録で画像を投稿できない。
+- 誰でも編集できてしまう(ユーザー、管理者の実装)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 画面
+### サプリメント一覧画面
+<img width="1440" alt="スクリーンショット 2021-10-06 22 35 28" src="https://user-images.githubusercontent.com/81233714/136214611-ff3d3ce0-fbc3-48b8-9cfa-0f8e8aee639a.png">
+<img width="1440" alt="スクリーンショット 2021-10-06 22 38 35" src="https://user-images.githubusercontent.com/81233714/136215153-6ca357a1-e016-4ac9-a176-18fa0bd4731f.png">
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### サプリメント詳細画面
+<img width="1440" alt="スクリーンショット 2021-10-06 22 39 04" src="https://user-images.githubusercontent.com/81233714/136215321-a7016b4c-cea7-4346-8c66-f8c5b746c1d9.png">
 
-## Laravel Sponsors
+### レビュー一覧画面
+<img width="1440" alt="スクリーンショット 2021-10-06 22 39 25" src="https://user-images.githubusercontent.com/81233714/136215741-ef36c5a8-4823-4688-8ac4-a1582924b818.png">
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### サプリメント登録画面
+<img width="1440" alt="スクリーンショット 2021-10-06 22 39 43" src="https://user-images.githubusercontent.com/81233714/136216372-266cc093-398b-4ea1-bf61-0107a0a2ac7d.png">
 
-### Premium Partners
+### サプリメント編集画面
+<img width="1440" alt="スクリーンショット 2021-10-06 22 39 59" src="https://user-images.githubusercontent.com/81233714/136216505-745ca6eb-b8b5-4bd8-83b4-cf46dbc45a9d.png">
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+### レビュー登録画面
+<img width="1440" alt="スクリーンショット 2021-10-06 22 40 30" src="https://user-images.githubusercontent.com/81233714/136216696-4c150a25-5050-4dae-baff-bdead6c030f3.png">
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### レビュー編集画面
+<img width="1440" alt="スクリーンショット 2021-10-06 22 40 16" src="https://user-images.githubusercontent.com/81233714/136216840-7fa81add-444e-457f-9c92-82df29552250.png">

@@ -11,7 +11,7 @@
         </div>
         <div class="form-group">
             <label for="birthday">誕生日</label>
-            <input type="text" name="birthday" id="birthday" value="{{ old('birthday') }}">
+            <input type="date" name="birthday" id="birthday" value="{{ old('birthday') }}">
         </div>
         <div class="form-group">
             <label for="age">年齢</label>
@@ -20,7 +20,7 @@
 
         <div class="form-group">
             <label for="birthplace">出身地</label>
-            <select name="birthplace" id="birthplace">
+            <select name="birthplace_id" id="birthplace">
                 @foreach ($birthplaces as $birthplace)
                     <option value="{{ $birthplace->id }}" @if(old('birthplace') ==  $birthplace->id) selected @endif>{{ $birthplace->name }}</option>
                 @endforeach
