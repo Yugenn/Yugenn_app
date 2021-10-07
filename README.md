@@ -24,7 +24,7 @@
 
 ## 画面
 ### サプリメント一覧画面
-<img width="1440" alt="スクリーンショット 2021-10-06 22 35 28" src="https://user-images.githubusercontent.com/81233714/136214611-ff3d3ce0-fbc3-48b8-9cfa-0f8e8aee639a.png">
+<img width="1440" alt="スクリーンショット 2021-10-06 22 35 28" src=https://raw.githubusercontent.com/Yugenn/Yugenn_app/images/一覧.png>
 <img width="1440" alt="スクリーンショット 2021-10-06 22 38 35" src="https://user-images.githubusercontent.com/81233714/136215153-6ca357a1-e016-4ac9-a176-18fa0bd4731f.png">
 
 ### サプリメント詳細画面
