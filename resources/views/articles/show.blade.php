@@ -37,12 +37,12 @@
     </table>
 
     <a href="/articles/{{ $article->id }}/edit">編集</a>
-                <div class="ml-2 mb-4"> 
-                    <form action="/articles/{{ $article->id }}" method="post">
-                        @csrf
-                        @method('delete')
-                        <button type="submit" onclick="if(!confirm('削除していいですか?')){return false}">削除する</button>
-                    </form>
-                </div>
+    <div class="ml-2 mb-4">
+        <form action="/articles/{{ $article->id }}" method="post">
+            @csrf
+            @method('delete')
+            <button type="submit" onclick="if(!confirm('削除していいですか?')){return false}">削除する</button>
+        </form>
+    </div>
     <a href="{{ route('articles.index') }}">戻る</a>
 @endsection

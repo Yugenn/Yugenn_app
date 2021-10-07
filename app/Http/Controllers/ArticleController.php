@@ -40,7 +40,7 @@ class ArticleController extends Controller
         $article->birthplace_id = $request->birthplace_id;
         $article->sex = $request->sex;
         $article->comment = $request->comment;
-        $article->image = $request->image;
+        $article->image ='storage/article_image/4.jpg';
 
         $article->save();
 
